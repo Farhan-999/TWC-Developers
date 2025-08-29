@@ -15,18 +15,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <head>
+</head>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
-
-<!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-light bg-light my-menu fixed-top">
-  <a href="#" class="navbar-brand">
-    <img src="images/1.png" alt="Logo" width="60px"> TWC Developers
-  </a>
+  <a href="#" class="navbar-brand"><img src="images/1.png" alt="Logo" width="60px"> TWC Developers</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -48,14 +44,12 @@
   </div>
 </nav>
 
-<!-- Hero Section -->
 <div class="jumbotron text-center" id="home">
   <h1 class="heading-font">TW Mobile App Development</h1>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
   <img class="animate__animated animate__slideInUp" src="images/phone.png" alt="Mobile App" width="80%">
 </div>
 
-<!-- Services -->
 <div class="jumbotron bg-light" id="service">
   <h1 class="heading-font text-center">Services</h1>
   <div class="row">
@@ -77,10 +71,10 @@
   </div>
 </div>
 
-<!-- Clients -->
 <div class="jumbotron bg-white text-center" id="clients">
   <h2 class="heading-font">Clients Feedback</h2>
   <div id="my-clients" class="carousel slide container" data-ride="carousel" data-interval="3000">
+
     <div class="carousel-inner">
       <div class="carousel-item active text-center">
         <img src="images/jon.png" alt="Client 1" class="client_pic d-block mx-auto">
@@ -108,33 +102,153 @@
       </div>
     </div>
 
-    <a href="#my-clients" role="button" data-slide="prev" class="carousel-control-prev">
-      <i class="fas fa-chevron-left text-dark" style="font-size: 30px;"></i>
-    </a>
     <a href="#my-clients" role="button" data-slide="next" class="carousel-control-next">
       <i class="fas fa-chevron-right text-dark" style="font-size: 30px;"></i>
     </a>
+    <a href="#my-clients" role="button" data-slide="prev" class="carousel-control-prev">
+      <i class="fas fa-chevron-left text-dark" style="font-size: 30px;"></i>
+    </a>
   </div>
 </div>
 
-<!-- Pricing -->
 <div class="jumbotron bg-light mb-0" id="pricing">
   <h1 class="heading-font text-center">Pricing</h1>
   <div class="row">
-    <!-- Pricing Cards (same as before) -->
+    <!-- Pricing Card 1 -->
+    <div class="col-md-4 p-4">
+      <div class="card text-center wow animate__animated animate__slideInLeft">
+        <div class="card-header bg-primary">
+          <h2 class="text-white">STARTER PLAN</h2>
+        </div>
+        <div class="card-body">
+          <h3>₹199/Monthly</h3>
+          <label>Static Apps</label>
+          <hr>
+          <label>Faster loading time</label>
+          <hr>
+          <label>Admin panel</label>
+          <hr>
+          <label>No Feature updates</label>
+          <hr>
+          <label>No Customer Support</label>
+          <hr>
+          <label>Paid Maintenance</label>
+          <hr>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary">More info</button>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing Card 2 -->
+    <div class="col-md-4 p-4">
+      <div class="card text-center wow animate__animated animate__slideInUp">
+        <div class="card-header bg-success">
+          <h2 class="text-white">PRO PLAN</h2>
+        </div>
+        <div class="card-body">
+          <h3>₹599/Monthly</h3>
+          <label>Dynamic Apps</label>
+          <hr>
+          <label>Faster loading time</label>
+          <hr>
+          <label>Admin panel</label>
+          <hr>
+          <label>Feature updates</label>
+          <hr>
+          <label>Customer Support</label>
+          <hr>
+          <label>Free Maintenance</label>
+          <hr>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-success">More info</button>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing Card 3 -->
+    <div class="col-md-4 p-4">
+      <div class="card text-center wow animate__animated animate__slideInRight">
+        <div class="card-header bg-danger">
+          <h2 class="text-white">BUSINESS PLAN</h2>
+        </div>
+        <div class="card-body">
+          <h3>₹999/Monthly</h3>
+          <label>Custom Apps</label>
+          <hr>
+          <label>Faster loading time</label>
+          <hr>
+          <label>Admin panel</label>
+          <hr>
+          <label>Feature updates</label>
+          <hr>
+          <label>Customer Support</label>
+          <hr>
+          <label>Free Maintenance</label>
+          <hr>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-danger">More info</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- Contact -->
+<!-- Contact Section -->
 <div class="jumbotron mb-0" id="contact">
   <h1 class="heading-font text-center">Contact Us</h1>
-  <!-- Contact form and details (same as before) -->
+  <div class="row">
+    <div class="col-md-6">
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Us !</button>
+      </form>
+    </div>
+
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-7">
+          <h5>Address :</h5>
+          <p>India, Telangana, Hyderabad.</p>
+          <h5>Email :</h5>
+          <p>fkgyanofficial@gmail.com</p>
+          <h5>Website :</h5>
+          <p>twcdevelopers.com</p>
+          <h5>Phone :</h5>
+          <p>+91 9700283990</p>
+        </div>
+        <div class="col-md-5 text-center">
+          <h4>Follow Us</h4>
+          <i class="fab fa-facebook social-icon"></i>
+          <i class="fab fa-google social-icon"></i>
+          <i class="fab fa-twitter social-icon"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+    <h5 class="text-center">Developed by : Farhan Ali</h5>
 </div>
 
-<!-- Scripts -->
-<script src="js/wow.min.js"></script>
-<script> new WOW().init(); </script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- JS Files -->
+  <script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+              </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
